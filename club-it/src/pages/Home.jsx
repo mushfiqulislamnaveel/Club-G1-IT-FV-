@@ -19,12 +19,12 @@ const Home = () => {
             <section className="gallery">
                 <h2>Best Selling Gallery</h2>
                 <div className="gallery-images">
-                    <img src="gallery-placeholder.png" alt="Gallery Image 1" />
-                    <img src="gallery-placeholder.png" alt="Gallery Image 2" />
-                    <img src="gallery-placeholder.png" alt="Gallery Image 3" />
-                    <img src="gallery-placeholder.png" alt="Gallery Image 4" />
-                    <img src="gallery-placeholder.png" alt="Gallery Image 5" />
-                    <img src="gallery-placeholder.png" alt="Gallery Image 6" />
+                    <img src="https://i.ibb.co/QCsSd9C/1.jpg" alt="Gallery Image 1" />
+                    <img src="https://i.ibb.co/0F9P0vk/6.jpg" alt="Gallery Image 2" />
+                    <img src="https://i.ibb.co/db4LQt6/2.jpg" alt="Gallery Image 3" />
+                    <img src="https://i.ibb.co/VmkznMn/3.jpg" alt="Gallery Image 4" />
+                    <img src="https://i.ibb.co/55rYR1s/5.jpg" alt="Gallery Image 5" />
+                    <img src="https://i.ibb.co/pw4B9C4/4.jpg" alt="Gallery Image 6" />
                 </div>
             </section>
         </div>
