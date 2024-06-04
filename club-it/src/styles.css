@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #14213d; /* Dark Blue */
+    background-color: #e5e5e5; /* Light Gray */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; /* Black */
+    border-bottom: 1px solid #fca311; /* Orange */
+    padding: 10px 20px;
+    color: #ffffff; /* White */
+}
+
+/* Main Navbar */
+.header {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo-search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav button:hover {
+    background-color: #fca311; /* Orange */
+    color: #000000; /* Black */
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff; /* White */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+    border-top: 1px solid #fca311; /* Orange */
+    border-bottom: 1px solid #fca311; /* Orange */
+}
+
+.category {
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fca311; /* Orange */
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000; /* Black */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #e5e5e5; /* Light Gray */
+    color: #14213d; /* Dark Blue */
+}
+
+/* Auth Pages */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e5e5e5; /* Light Gray */
+    padding: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.auth-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.auth-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #fca311; /* Orange */
+    color: #000000; /* Black */
+}
+
+.secondary-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fca311; /* Orange */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+/* Gallery */
+.gallery {
+    padding: 20px;
+    text-align: center;
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Products */
+.products {
+    padding: 20px;
+    background-color: #e5e5e5; /* Light Gray */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #14213d; /* Dark Blue */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+    background-color: #fca311; /* Orange */
+    border: none;
+    padding: 10px 15px;
+    color: #000000; /* Black */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+/* Product Detail */
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    color: #14213d; /* Dark Blue */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-images .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.product-info h1 {
+    margin-bottom: 10px;
+}
+
+.product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.product-meta span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.key-features {
+    list-style: none;
+    padding: 0;
+}
+
+.key-features li {
+    margin-bottom: 5px;
+}
+
+.payment-options {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.payment-options .option {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.payment-options .option input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.quantity-buy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.quantity-buy input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #fca311; /* Orange */
+    border-radius: 4px;
+    outline: none;
+}
+
+.buy-now {
+    background-color: #fca311; /* Orange */
+    border: none;
+    padding: 10px 20px;
+    color: #000000; /* Black */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+/* Cart */
+.cart {
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    color: #14213d; /* Dark Blue */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5; /* Light Gray */
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+}
+
+.cart-item-details input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #fca311; /* Orange */
+    border-radius: 4px;
+    outline: none;
+}
+
+.cart-item-details button {
+    background-color: #d62828; /* Red */
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff; /* White */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.cart-item-details button:hover {
+    background-color: #a11f1f; /* Darker Red */
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-total h3 {
+    margin: 0;
+}
+
+.cart-total button {
+    background-color: #fca311; /* Orange */
+    border: none;
+    padding: 10px 20px;
+    color: #000000; /* Black */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-total button:hover {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+/* Centered Form Container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    background-color: #ffffff; /* White */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #14213d; /* Dark Blue */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #14213d; /* Dark Blue */
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fca311; /* Orange */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #14213d; /* Dark Blue */
+}
+
+/* Error Message */
+.form-container p {
+    color: red;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #fca311; /* Orange */
+}
+
+footer .logoz {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 70%;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-caption {
+
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Admin Navbar */
+.admin-navbar {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.admin-navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-navbar-links a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.admin-navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.admin-navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-navbar-user span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.admin-navbar-user button {
+    background-color: #fca311; /* Orange */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #ffffff; /* White */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-navbar-user button:hover {
+    background-color: #e89008; /* Darker Orange */
+}
+
+/* Admin Page Styles */
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light Gray */
+    min-height: 100vh;
+}
+
+.admin-page h2 {
+    color: #14213d; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.admin-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #14213d; /* Dark Blue */
+    color: #ffffff; /* White */
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light Gray */
+}
+
+/* Admin Dashboard Cards */
+.admin-dashboard .cards {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-dashboard .card {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    color: #14213d; /* Dark Blue */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-dashboard .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard .card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Admin Forms */
+.product-form, .user-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.product-form input, .product-form textarea, .user-form input {
+    flex: 1 1 45%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.product-form textarea, .user-form label {
+    flex: 1 1 100%;
+}
+
+.product-form button, .user-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50; /* Green */
+    color: #ffffff; /* White */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product-form button:hover, .user-form button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #4caf50; /* Green */
+    color: #ffffff; /* White */
+}
+
+.edit-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: #ffffff; /* White */
+}
+
+.delete-button:hover {
+    background-color: #e41e26; /* Darker Red */
+}
